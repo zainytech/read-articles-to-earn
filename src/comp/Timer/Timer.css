@@ -1,0 +1,69 @@
+.article-expired-notice{
+   /* border:red solid 1px;  */
+   margin-top:1rem;
+}
+.article-expired-notice button{
+    padding:0.7rem;
+    background-color: #F4F3FE;
+    width:100%;
+    border-radius:2rem;
+    border:none;
+    font-size:20px;
+    font-weight: 800;
+    color:#7119B8;
+    cursor:pointer;
+}
+  
+  .article-show-counter {
+    /* padding: 0.5rem; */
+    margin-top:1rem;
+    /* border:red solid 1px; */
+    display:flex;
+    color:#F4F3FE;
+    font-size:20px;
+    font-weight: 700;
+    justify-content: center;
+  }
+  
+  .article-show-counter .countdown-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0.5rem;
+    border: 1px solid #ebebeb;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .article-show-counter .countdown {
+    padding-left:1rem;
+    padding-right:1rem;
+    text-align: center;
+    /* border:green solid 1px; */
+  }
+  
+  .article-show-counter .countdown.danger {
+    color: #00FEDF;
+  }
+  
+  .article-show-counter .countdown > p {
+    margin: 0;
+  }
+  
+  .article-show-counter .countdown > span {
+    text-transform: uppercase;
+    font-size: 14px;
+    /* line-height: 3rem; */
+  }
+  
+@media screen and (max-width: 500px) {
+  .article-expired-notice button{
+    padding:0.5rem;
+    font-size:16px;
+}
+}

@@ -1,0 +1,169 @@
+.signup{
+    background-image: url('../assets/sign.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .9;
+}
+.signup2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+    z-index: 1000;
+    gap: 16rem;
+}
+.signup22{
+    border-radius: 1.8rem;
+   background-color: white;
+   border: 2px solid #8529CD;
+   border-bottom: 6px solid #8529CD;
+   border-top: 6px solid #8529CD;
+   border-right: 3px solid #8529CD;
+   border-left: 3px solid #8529CD;
+   color: #8529CD;    
+   width: 33%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1.2rem;
+   padding: 1rem 0 3rem 0;
+   /* padding-bottom: 3rem; */
+   position: relative;
+   box-shadow:  6px 8px 95px 0px rgba(255, 255, 255, 0.2), 1px 2px 80px 1px rgba(255, 255, 255, 0.3);
+}
+
+.signup2-div{
+    width: 84%;
+    margin: .1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    font-weight: 600;
+    font-size: 18px;
+}
+.signup22 input{
+    width: 98%;
+    height: 2rem;
+    padding: .2rem 0;
+    outline: none;
+    border-radius: 1rem;
+    border: 2px solid #8529CD;
+    padding-left: .4rem;
+    background-color: transparent;
+    /* color: white; */
+    border: none;
+    border-top: 3px solid #8529CD;
+    border-bottom: 3px solid #8529CD;
+    border-left: .2px solid #8529CD;
+    border-right: .2px solid #8529CD;
+    
+}
+.signup22 button{
+    width: 84%;
+    height: 3.2rem;
+    background-color: #8529CD;
+    outline: none;
+    border: none;
+    color:  white;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    border-top: 4px solid #8529CD;
+    border-bottom: 4px solid #8529CD;
+    /* box-shadow: 0px 4px 8px rgba(10,22,70,0.15); */
+}
+.signup22 button:hover{
+    opacity: .8;
+
+}
+
+.signup21 h2{
+    font-size: 3.2vw;
+    color: white;
+    opacity: 1;
+    position: relative;
+}
+.signup21 h1{
+    margin-top: -2rem;
+    font-size: 4vw;
+    color: #8529CD;
+    /* -webkit-text-stroke: 0.1vw purple; */
+    box-shadow: inset;
+    filter: drop-shadow(7px);
+    /* text-shadow: 4px 4px 6px rgba(230, 236, 248, 0.6); */
+    position: relative;
+}
+.signup21 h1::before{
+    content: attr(datatype);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: white;
+    animation: animate 6s linear infinite;
+    /* -webkit-text-stroke: 0vw rgb(37, 37, 231); */
+    border-right: 2px solid white;
+    overflow: hidden;    
+}
+
+@keyframes animate {
+    0%
+    {
+        width: 0%;
+    }
+    50%
+    {
+        width: 107%;
+    }
+    0%
+    {
+        width: 0%;
+    }
+}
+
+@media screen and (max-width: 920px){
+    #myVideo{
+        display: none;
+    }
+    .signup2{
+        display: flex;
+        flex-direction: column;
+        /* padding: 3rem 0; */
+        height: max-content;
+        gap: 2rem;
+        height: 100vh;
+    }
+    .signup22{
+        width: 94%;
+    }
+    .signup2-div{
+        width: 92%;
+    }
+    .signup21{
+        line-height: 2.6em;
+        padding-top: 5rem;
+    }
+    .signup21 h2{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .signup21 h1{
+        font-size: 1.9rem;
+    }
+}

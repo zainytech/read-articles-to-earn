@@ -1,0 +1,95 @@
+.dash-main{
+    /* padding-top:5rem; */
+    /* padding-bottom:5rem; */
+    /* background-color: #F4F3FE; */
+    width:100%;
+}
+.dash-main-container{
+    /* margin-left:5rem;
+    margin-right:5rem; */
+    display:flex;
+/* border:red solid 1px; */
+}
+.dash-main1{
+    width:20%;
+    /* border:red solid 1px; */
+    background-color: #E4E0FC;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.dash-main1-div{
+    margin:1rem;
+}
+.dash-main1-div1{
+    padding:1rem;
+    border: #7119B8 solid 2px;
+    margin-top:0.5rem;
+    border-radius:1rem;
+    color:#7119B8;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color:#F4F3FE;
+    /* text-align: left; */
+}
+.dash-main1-div-txt{
+    color:#7119B8;
+    font-size: 30px;
+    font-weight: 800;
+    padding:1rem;
+}
+.dash-main1-div1:hover{
+    background-color: #7119B8;
+    color:white;
+}
+.dash-main2{
+    width:80%;
+    border:green solid 1px;
+    border-radius: 1rem;
+    background-image: url(./assets/bg-purple.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    background-attachment: fixed;
+}
+.dash-main2-container{
+    margin: 5rem;
+    /* margin-right: 5rem;; */
+}
+.dash-main2-div1{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,3fr));
+    gap: 5rem;
+    justify-content: center;
+}
+.dash-main2-div1a{
+    background-color: #F4F3FE;
+    border-radius: 1rem;
+    padding:5rem;
+    font-size: 20px;
+    color:#7119B8;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .dash-main1{
+        width:20rem;
+    }
+    .dash-main2{
+        width:100%;
+    }
+    .dash-main2-div1{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem,3fr));
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .dash-main2-div1{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem,3fr));
+        gap: 1rem;
+    }
+}
